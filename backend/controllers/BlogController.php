@@ -39,7 +39,6 @@ class BlogController extends Controller
      */
     public function actionIndex()
     {
-
         if (!Yii::$app->user->can('/blog/index')) {
             throw new \yii\web\ForbiddenHttpException("没权限访问.");
         }
